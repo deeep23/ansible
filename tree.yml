@@ -1,8 +1,0 @@
---- # Playbook Name
-- hosts: node_group
-  user: all
-  become: yes
-  connection: ssh
-  tasks:
-         - name: install tree on node1 & node2
-           action: apt name=tree state=present
