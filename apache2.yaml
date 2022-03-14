@@ -1,5 +1,5 @@
 --- # http server
-- hosts: dev_hosts
+- hosts: demo_hosts
   user: semaphore
   become: yes
   connection: ssh
