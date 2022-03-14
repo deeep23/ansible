@@ -1,0 +1,8 @@
+--- # http server
+- hosts: dev_hosts
+  user: semaphore
+  become: yes
+  connection: ssh
+  tasks:
+         - name: Install httpd on ubuntu
+           command: apt-get -y install apache2
