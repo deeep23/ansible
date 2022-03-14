@@ -1,5 +1,5 @@
 --- # http server
-- hosts: staging_hosts
+- hosts: dev_hosts
   user: semaphore
   become: yes
   connection: ssh
