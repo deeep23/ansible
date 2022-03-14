@@ -1,0 +1,8 @@
+--- # Playbook Name
+- hosts: Dev_group
+  user: all
+  become: yes
+  connection: ssh
+  tasks:
+         - name: create a file
+           action: touch name=test1 state=present
