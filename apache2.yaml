@@ -1,6 +1,6 @@
 --- # http server
 - hosts: all
-  user: semaphore
+  user: all
   become: yes
   connection: ssh
   tasks:
