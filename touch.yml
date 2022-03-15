@@ -1,5 +1,5 @@
 --- # Playbook Name
-- hosts: demo_hosts
+- hosts: dev_hosts
   user: all
   become: yes
   connection: ssh
