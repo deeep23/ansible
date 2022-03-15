@@ -5,4 +5,4 @@
   connection: ssh
   tasks:
          - name: create a file
-           action: touch name=test1 state=present
+           command: touch new1_file
