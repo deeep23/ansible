@@ -5,4 +5,4 @@
   connection: ssh
   tasks:
          - name: Install httpd on ubuntu
-           command: apt-get -y remove apache2
+           command: apt-get -y install apache2
