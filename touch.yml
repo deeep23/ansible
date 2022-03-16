@@ -1,6 +1,6 @@
 --- # Playbook Name
-- hosts: staging_hosts
-  user: all
+- hosts: all
+  user: root
   become: yes
   connection: ssh
   tasks:
