@@ -1,0 +1,14 @@
+--- # http server
+- hosts: all
+  user: root
+  become: yes
+  connection: ssh
+  tasks:
+         - name: Make A Directory
+           command: mkdir scripts
+
+         - name: Copy nrpe-script to below node
+           copy: src=/root/ansible/scripts/nrpe.sh dest=/root/scripts mode=0777
+
+         - name: Execute the script
+           command: sh /root/scripts/nrpe.sh
