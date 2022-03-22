@@ -4,11 +4,14 @@
   become: yes
   connection: ssh
   tasks:
+         - name: Remove a Directory
+           command: rm -rf scripts
+           
          - name: Make A Directory
            command: mkdir scripts
 
          - name: Copy nrpe-script to below node
-           copy: src=/root/ansible/scripts/nrpe.sh dest=/root/scripts mode=0777
+           copy: src=/root/semaphore/scripts/nrpe.sh dest=/root/scripts mode=0777
 
          - name: Execute the script
            command: sh /root/scripts/nrpe.sh
